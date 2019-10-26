@@ -34,7 +34,9 @@ ADD raspi_install/raspi-requirements.txt .
 
 RUN sudo pip --no-cache-dir install -r raspi-requirements.txt --no-deps
 
-RUN git clone git://git.drogon.net/wiringPi && cd wiringPi && ./build
+RUN sudo pip install --upgrade pip
+
+RUN git clone https://github.com/erdemarslan/WiringPi.git && cd WiringPi && ./build
 RUN sudo pip install wiringpi2
 
 RUN cd ~/ && git clone https://github.com/adafruit/zj-58 && cd zj-58 && make && sudo ./install \
