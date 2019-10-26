@@ -30,3 +30,9 @@ pbr
 funcsigs
 absl-py
 rpi.gpio
+libcups2-dev
+libcupsimage2-dev
+git
+build-essential
+cups
+system-config-printer

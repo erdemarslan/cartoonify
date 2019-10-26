@@ -12,7 +12,7 @@ label_map_path = root / '..' / 'cartoonify' / 'app' / 'label_mapping.jsonl'
 download_path = root / '..' / 'cartoonify' / 'downloads'
 quickdraw_dataset_url = 'https://storage.googleapis.com/quickdraw_dataset/full/binary/'
 tensorflow_model_download_url = 'http://download.tensorflow.org/models/object_detection/'
-tensorflow_model_name = 'ssd_mobilenet_v1_coco_2017_11_17'
+tensorflow_model_name = 'ssd_mobilenet_v1_coco_2018_01_28'
 model_path = download_path / 'detection_models' / tensorflow_model_name / 'frozen_inference_graph.pb'
 
 
